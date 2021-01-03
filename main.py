@@ -4,9 +4,9 @@ credentials = credentials()
 
 firebase = pyrebase.initialize_app(credentials)
 
-# db = firebase.database()
+db = firebase.database()
 auth = firebase.auth()
-# storage = firebase.storage()
+storage = firebase.storage()
 
 # Auth Process
 def userAuth():
@@ -35,5 +35,3 @@ def userSignUp():
     except:
         print("Make sure that mail does not exist, or your password is right.")
         return False
-
-userSignUp()
